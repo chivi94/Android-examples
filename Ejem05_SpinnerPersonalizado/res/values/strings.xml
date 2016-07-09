@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejem05_SpinnerPersonalizado</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="datosString">
+        <item >Valor1</item>
+        <item >Valor2</item>
+        <item >Valor3</item>
+        <item >Valor4</item>
+    </string-array>
+    <string name="Guardar">Guardar</string>
+    <string name="Eliminar">Eliminar</string>
+
+</resources>
