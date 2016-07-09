@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ejem02_componentesbasicos.MainActivity" >
+
+    <CheckBox
+        android:id="@+id/cb_estado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="CheckBox" />
+
+    <ToggleButton
+        android:id="@+id/tb_encender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/cb_estado"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/ctv_textoActivado"
+        android:text="ToggleButton" />
+
+    <CheckedTextView
+        android:id="@+id/ctv_textoActivado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cb_estado"
+        android:layout_below="@+id/tb_encender"
+        android:layout_marginTop="21dp"
+        android:text="@string/texto" />
+
+    <TextView
+        android:id="@+id/tv_texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sw_encender"
+        android:layout_marginBottom="30dp"
+        android:layout_toLeftOf="@+id/tb_encender"
+        android:text="TextView" />
+
+    <Spinner
+        android:id="@+id/sp_desplegable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_texto"
+        android:layout_marginBottom="15dp"
+        android:entries="@array/datosSpinner" />
+
+    <Switch
+        android:id="@+id/sw_encender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_texto"
+        android:layout_alignParentBottom="true"
+        android:text="Switch" />
+
+    <RadioGroup
+        android:id="@+id/rg_opciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sp_desplegable"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="26dp" >
+
+        <RadioButton
+            android:id="@+id/rg_opcion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Radio" />
+
+        <RadioButton
+            android:id="@+id/rg_opcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+        <RadioButton
+            android:id="@+id/rg_opcion3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+</RelativeLayout>
