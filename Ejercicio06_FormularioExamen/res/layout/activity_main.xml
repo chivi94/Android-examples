@@ -1,0 +1,145 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ejercicio06_formularioexamen.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="152dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill_vertical|fill_horizontal"
+                android:layout_weight="0.5"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/Ingles"
+                android:src="@drawable/alumn" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="181dp"
+            android:layout_weight="0.5" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="132dp"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:layout_weight="0.5"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_nombre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#B57E43"
+                    android:text="@string/Nombre"
+                    android:textColor="#EEEEEE" />
+
+                <EditText
+                    android:id="@+id/et_nombres"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/Nombre"
+                    android:inputType="text" >
+
+                    <requestFocus />
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_matematicas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#B57E43"
+                    android:text="@string/Matematicas"
+                    android:textColor="#EEEEEE" />
+
+                <Spinner
+                    android:id="@+id/sp_notas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/Notas" />
+
+                <TextView
+                    android:id="@+id/tv_ingles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#B57E43"
+                    android:text="@string/Ingles"
+                    android:textColor="#EEEEEE" />
+
+                <RadioGroup
+                    android:id="@+id/rg_grupo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/rb_aprobado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/Aprobado" />
+
+                    <RadioButton
+                        android:id="@+id/rb_suspenso"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/Suspenso" />
+                </RadioGroup>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/b_cal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/Calificacion" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B57E43"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#B57E43"
+            android:text="@string/Resultado"
+            android:textColor="#EEEEEE" />
+    </LinearLayout>
+
+</LinearLayout>
