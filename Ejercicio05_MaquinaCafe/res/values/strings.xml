@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Ejercicio5_Cafe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="tiposCafe">
+        <item >Cafe Solo</item>
+        <item >Cafe con leche</item>
+        <item >Descafeinado</item>
+        <item >Capuccino</item>
+        <item >Colacao</item>
+        <item >Cafe Irlandes</item>
+        <item >Leche Sola</item>
+    </string-array>
+    <string name="vacio"/>
+    <string name="azucar">Extra Azucar</string>
+    <string name="Servir">Servir cafe</string>
+    <string name="Encender"/>
+
+</resources>
