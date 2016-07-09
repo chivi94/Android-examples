@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:id="@+id/group1">
+        <item android:id="@+id/item1" android:title="G1Item1"></item>
+        <item android:id="@+id/item2" android:title="G1Item2"></item>
+        <item android:id="@+id/item3" android:title="G1Item3"></item>
+    </group>
+    <group android:id="@+id/group2">
+        <item android:id="@+id/item4" android:title="G2Item4"></item>
+        <item android:id="@+id/item5" android:title="G2Item5"></item>
+        <item android:id="@+id/item6" android:title="Finalizar"></item>
+    </group>
+    
+
+</menu>

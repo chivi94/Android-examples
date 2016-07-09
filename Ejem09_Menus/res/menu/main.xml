@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ejem09_menus.MainActivity" >
+
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/action_settings">
+    </item>
+    <group android:id="@+id/group1">
+        <item android:id="@+id/item1" android:title="1"></item>
+        <item android:id="@+id/item2" android:title="2"></item>
+        <item android:id="@+id/item3" android:title="3"></item>
+    </group>
+</menu>
